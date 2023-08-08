@@ -1,7 +1,7 @@
 :root {
     --black: black;
     --white: white;
-    --blueviolet: blueviolet;
+    --blueviolet: #e89aff;
 }
 
 body {
@@ -9,6 +9,12 @@ body {
     transition: background-color 2.0s ease;
     color: var(--black);
     font-size: 25px;
+}
+
+button {
+    cursor: pointer;
+    border-color: black;
+    border-radius: 10px;
 }
 
 .dark-mode {
