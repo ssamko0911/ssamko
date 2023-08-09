@@ -2,6 +2,8 @@
     --black: #171923;
     --white: white;
     --blueviolet: #FF2D20;
+    --heading-font-family:'Playfair Display', serif;
+    --default-font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -10,7 +12,14 @@ body {
     transition: background-color 2.0s ease;
     color: var(--black);
     text-align: center;
+    font-family: var(--default-font-family);
     font-size: 25px;
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+
 }
 
 #btn-mode {
@@ -58,13 +67,14 @@ body {
 }
 
 .btn {
-    color: var(--black);
+    color: var(--white);
     background-color: darkgray;
     padding: 10px 15px;
     border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
     font-size: 25px;
+    font-family: var(--default-font-family);
 }
 
 .close-modal {
@@ -82,3 +92,4 @@ body {
     border-radius: 50%;
     /*border: 5px solid var(--white);*/
 }
+

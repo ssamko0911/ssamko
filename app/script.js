@@ -14,7 +14,7 @@ const toggleMode = function () {
     if (bodyElement.className === 'dark-mode') {
         imageElement.src = imageLight;
         imageElement.title = 'Light mode';
-        btn.style.color = '#FF2D20';
+        // btn.style.color = '#FF2D20';
 
     } else {
         imageElement.src = imageDark;
