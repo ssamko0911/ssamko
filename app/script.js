@@ -1,3 +1,5 @@
+// definitions area;
+
 const imageDark = 'icons/mode-dark.gif';
 const imageLight = 'icons/mode-white.gif';
 
@@ -8,20 +10,20 @@ const overlay = document.querySelector('.overlay');
 const btn = document.querySelector('.btn');
 const btnCloseModal = document.querySelector('.close-modal');
 
+// dark/light mode logic;
 const toggleMode = function () {
     bodyElement.classList.toggle('dark-mode');
 
     if (bodyElement.className === 'dark-mode') {
         imageElement.src = imageLight;
         imageElement.title = 'Light mode';
-        // btn.style.color = '#FF2D20';
-
     } else {
         imageElement.src = imageDark;
         imageElement.title = 'Dark mode';
     }
 }
 
+// modal window logic;
 const openModal = function () {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');

@@ -8,7 +8,6 @@
 
 body {
     background-color: darkseagreen;
-    /*background-color: var(--white);*/
     transition: background-color 2.0s ease;
     color: var(--black);
     text-align: center;
@@ -33,7 +32,6 @@ h1 {
 .dark-mode {
     background-color: var(--black);
     transition: background-color 0.5s ease;
-    /*color: var(--blueviolet);*/
     color: var(--white);
 }
 
@@ -56,7 +54,7 @@ h1 {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -89,7 +87,32 @@ h1 {
 }
 
 .my-picture {
-    border-radius: 50%;
-    /*border: 5px solid var(--white);*/
+    border-radius: 20%;
+    /*not a good solution*/
+    border: 2px solid white;
 }
 
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paragraph-info {
+    width: 800px;
+    margin-bottom: 10px;
+}
+
+img {
+    border: 1px solid white;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+footer {
+    margin: 50px 0;
+    font-size: 15px;
+}
