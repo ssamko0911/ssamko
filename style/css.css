@@ -27,6 +27,8 @@ h1 {
     border-color: black;
     border-radius: 10px;
     float: right;
+    padding-top: 5px;
+    margin: 5px;
 }
 
 .dark-mode {
@@ -34,6 +36,10 @@ h1 {
     transition: background-color 0.5s ease;
     color: var(--white);
 }
+
+/*#btn-img {*/
+/*    padding-top: 5px;*/
+/*}*/
 
 .hidden {
     display: none;
@@ -88,8 +94,6 @@ h1 {
 
 .my-picture {
     border-radius: 20%;
-    /*not a good solution*/
-    border: 2px solid white;
 }
 
 .flex-container {
@@ -104,7 +108,7 @@ h1 {
 }
 
 img {
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 li {
