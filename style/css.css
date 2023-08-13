@@ -70,7 +70,7 @@ h1 {
     z-index: 5;
 }
 
-.btn {
+.show-modal {
     color: var(--white);
     background-color: darkgray;
     padding: 10px 15px;
