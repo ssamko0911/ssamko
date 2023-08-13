@@ -23,8 +23,37 @@ const toggleMode = function () {
     }
 }
 
+const createList = function (data) {
+    let list = document.createElement('ul');
+    let entry = document.createElement('li');
+    data.forEach(element => {
+        entry.textContent = element;
+        list.appendChild(element);
+    });
+    return list;
+}
+
+let data = `
+    <div id="data">
+        <h1>Soft skills:</h1>
+        <p>
+        <ul>
+            <li>Problem Solving &#129504</li>
+            <li>Critical Thinking &#129488</li>
+            <li>Time management &#9202</li>
+            <li>Agility &#128175</li>
+            <li>Teamwork &#128077</li>
+            <li>Effective communication	&#128172</li>
+            <li>Attention to details &#9997</li>
+        </ul>
+        </p>
+</div>`;
+
 // modal window logic;
 const openModal = function () {
+    if (modal.id === 'modal-soft') {
+        modal.insertAdjacentHTML('beforeend', data);
+    }
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 }
@@ -32,6 +61,7 @@ const openModal = function () {
 const closeModal = function () {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
+    document.querySelector('#data').remove();
 }
 
 // btn open/close logic;
