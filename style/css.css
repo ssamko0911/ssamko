@@ -120,3 +120,17 @@ footer {
     margin: 50px 0;
     font-size: 15px;
 }
+
+/*footer .social-links a {*/
+/*    margin: 0 20px;*/
+/*    color: var(--black);*/
+/*    background-color: var(--white);*/
+/*    padding: 10px 14px;*/
+/*    font-size: 18px;*/
+/*    border-radius: 50%;*/
+/*    transition: all 100ms ease-in-out;*/
+/*}*/
+
+/*footer .email-link:hover {*/
+/*    color: var(--black);*/
+/*}*/

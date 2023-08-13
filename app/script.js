@@ -12,15 +12,15 @@ const dataObject = {
     ],
     hardSkills: [
         '&#x1F418; PHP ',
-        '&#x1F418; JS ',
+        '&#128220; JS ',
         '&#x2615 JAVA ',
         '&#127760; HTML ',
         '&#127752; CSS ',
         '&#128203; SQL',
         '&#128049; GIT ',
-        '&#128049; OOP',
+        '&#128187; OOP',
         '&#x1F171; BOOTSTRAP',
-        '&#128049; LARAVEL',
+        '&#128293; LARAVEL',
     ],
     myAchievements: [
         'Permanent training - <a href="https://www.codewars.com/users/ssamko0911" target="_blank">CodeWars</a>',
