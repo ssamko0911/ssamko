@@ -11,16 +11,23 @@ const dataObject = {
         'Attention to details &#9997',
     ],
     hardSkills: [
-        'PHP &#129504',
-        'JS &#129488',
-        'HTML &#9202',
+        '&#x1F418; PHP ',
+        '&#x1F418; JS ',
+        '&#x2615 JAVA ',
+        '&#127760; HTML ',
+        '&#127752; CSS ',
+        '&#128203; SQL',
+        '&#128049; GIT ',
+        '&#128049; OOP',
+        '&#x1F171; BOOTSTRAP',
+        '&#128049; LARAVEL',
     ],
     myAchievements: [
         'Permanent training - <a href="https://www.codewars.com/users/ssamko0911" target="_blank">CodeWars</a>',
         'One of my samples - <a href="https://github.com/ssamko0911/laravel_projects_with_tasks" target="_blank">Coded with Laravel</a>',
         'Open-source contributions - <a href="https://github.com/salesagility/SuiteCRM/pulls/serhiisamko091184" target="_blank">SuiteCRM</a>',
         'I like JAVA - <a href="https://github.com/ssamko0911/JavaEssentialHWrelaunch/tree/master/src/transporthub" target="_blank">Console Bus Station</a>',
-        'HTML &#9202',
+        'Credentials - <a href="https://www.linkedin.com/in/serhii-samko-34462a52/details/featured/" target="_blank">My certificates</a>',
     ]
 }
 
@@ -53,7 +60,8 @@ const toggleMode = function () {
     }
 }
 
-
+// modal window logic:
+// create <li> elements for ul:
 const createList = function (data) {
     let list = document.getElementById("data-list");
     for (let i = 0; i < data.length; ++i) {
@@ -63,36 +71,35 @@ const createList = function (data) {
     }
 }
 
-// modal window logic;
+// open modal:
+const openModal = function (event) {
+    modal.id = event.target.id;
+    let title = headers[modal.id];
 
+    let modalContent = `
+                <div id="data">
+                    <h1>${title}</h1>
+                    <ul id="data-list"></ul>
+                </div>`;
+
+    modal.insertAdjacentHTML('beforeend', modalContent);
+    createList(dataObject[modal.id]);
+
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+}
+
+btns.forEach(element => {
+    element.addEventListener('click', openModal);
+});
+
+// btn close modal logic;
 const closeModal = function () {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
     document.querySelector('#data').remove();
 }
 
-// btn open/close logic;
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function (event) {
-        modal.id = event.target.id;
-
-        let title = headers[modal.id];
-
-        let modalContent = `
-    <div id="data">
-        <h1>${title}</h1>
-        <ul id="data-list"></ul>
-    </div>`;
-
-        modal.insertAdjacentHTML('beforeend', modalContent);
-        createList(dataObject[modal.id]);
-
-        modal.classList.remove('hidden');
-        overlay.classList.remove('hidden');
-    });
-}
-
-// btn close logic;
 btnCloseModal.addEventListener('click', closeModal);
 
 //  overlay close logic;
