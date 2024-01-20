@@ -27,7 +27,7 @@ const dataObject = {
         'One of my samples - <a href="https://github.com/ssamko0911/laravel_projects_with_tasks" target="_blank">Coded with Laravel</a>',
         'Open-source contributions - <a href="https://github.com/salesagility/SuiteCRM/pulls/serhiisamko091184" target="_blank">SuiteCRM</a>',
         'I like JAVA - <a href="https://github.com/ssamko0911/JavaEssentialHWrelaunch/tree/master/src/transporthub" target="_blank">Console Bus Station</a>',
-        'Credentials - <a href="https://www.linkedin.com/in/serhii-samko-34462a52/details/featured/" target="_blank">My certificates</a>',
+        //'Credentials - <a href="https://www.linkedin.com/in/serhii-samko-34462a52/details/featured/" target="_blank">My certificates</a>',
     ]
 }
 
